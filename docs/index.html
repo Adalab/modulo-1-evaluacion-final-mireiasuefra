@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
       <div class="menu">
           <a class="menu__link" href="https://adalab.es/" target="blanck" title="Adalab">
               <img src="./assets/images/ico-menu.svg" alt="icon menu">
@@ -25,11 +25,11 @@
           <P class="hero__text">
               In hac habitasse platea dictumst.
           </P>
-          <a class="hero__icon-scroll" href="./assets/images/ico-scroll-down.svg" target="blanck"
-              title="go to the bottom"> <img class="hero__icon-img" src="./assets/images/ico-scroll-down.svg" alt="icon scroll"></a>
+          <a class="hero__icon-scroll" href="#features" title="go to features">
+              <img class="hero__icon-img" src="./assets/images/ico-scroll-down.svg" alt="icon scroll">
+          </a>
       </div>
   </header>
-
   <main class="container-main">
     <section class="tip">
         <p class="tip__subtitle">
@@ -46,7 +46,7 @@
         </button>
 
       </section>
-    <section class="features">
+    <section class="features" id="features">
       <h3 class="features__title">
         3 Reasons To Purchase
       </h3>
@@ -84,9 +84,42 @@
       </button>
     </section>
   </main>
+  <footer class="footer">
+      <a class="icon-scroll" href="#header" title="top of page">
+          <img src="./assets/images/ico-arrow.svg" alt="icon scroll">
+      </a>
+      <div class="footer-links__container">
+          <nav class="footer-links__nav">
+              <ul>
+                  <li><a href="https://adalab.es/" alt="web Adalab" title="web Adalab" target="blank" >articles</a></li>
 
+                  <li><a href="https://adalab.es/" alt="web Adalab" title="web Adalab" target="blank" >books</a></li>
 
+                  <li><a href="https://adalab.es/" alt="web Adalab" title="web Adalab" target="blank" >events</a></li>
 
+                  <li><a href="https://adalab.es/" alt="web Adalab" title="web Adalab" target="blank" >reasons</a></li>
+
+                  <li><a href="https://adalab.es/" alt="web Adalab" title="web Adalab" target="blank" >tips</a></li>
+
+              </ul>
+          </nav>
+          <nav class="footer-links__social">
+              <ul>
+                  <li><a href="https://adalab.es/" alt="web Adalab" title="web Adalab" target="blank" >twitter</a></li>
+
+                  <li><a href="https://adalab.es/" alt="web Adalab" title="web Adalab" target="blank" >instagram</a></li>
+
+                  <li><a href="https://adalab.es/" alt="web Adalab" title="web Adalab" target="blank" >mastodon.social</a></li>
+
+              </ul>
+          </nav>
+          <div class="footer-links__span">
+              <span> © 2021</span>
+              <span>we <span class="heart">&#x2764;</span> componens</span>
+          </div>
+      </div>
+
+  </footer>
 </body>
 
 </html>
