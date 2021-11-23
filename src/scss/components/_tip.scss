@@ -16,7 +16,7 @@
 
   &__subtitle {
     font-size: 14px;
-    color: lightblue;
+    color: #8ccbea;
     margin-top: 30px;
 
     @media (min-width: $breakpoint-desktop) {
@@ -26,6 +26,7 @@
 
   &__title {
     font-size: 24px;
+    font-weight: bold;
     line-height: 1.5;
     text-transform: capitalize;
     margin-top: 1px;
@@ -58,19 +59,23 @@
     text-align: center;
     border: 2px solid $highlighted-color;
     border-radius: 30px;
-    width: 60px;
-    height: 40px;
     margin-top: 30px;
     margin-bottom: 45px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 25px;
 
     @media (min-width: $breakpoint-tablet) {
       margin-top: 30px;
       margin-bottom: 60px;
-      width: 70px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
 
-      @media (min-width: $breakpoint-desktop) {
-        width: 120px;
-      }
+    @media (min-width: $breakpoint-desktop) {
+      padding-left: 67px;
+      padding-right: 67px;
     }
   }
 }
