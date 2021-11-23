@@ -1,0 +1,87 @@
+.footer {
+  background-color: $dark-background;
+  color: white;
+  font-family: $principal-font;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  & a {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  &-links__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    @media (min-width: $breakpoint-tablet) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      text-align: start;
+
+    }
+  }
+
+  &-links__nav {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-tablet) {
+      order: 2;
+      margin-top: 20px;
+    }
+  }
+
+  &-links__social {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-tablet) {
+      order: 3;
+      margin-top: 20px;
+    }
+  }
+
+  &-links__span {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 30px;
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $breakpoint-tablet) {
+      order: 1;
+      margin-top: 20px;
+    }
+  }
+}
+
+.icon-scroll {
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-17px);
+}
+
+.heart {
+  color: $highlighted-color;
+}
