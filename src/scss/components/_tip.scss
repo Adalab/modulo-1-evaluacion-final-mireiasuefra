@@ -65,7 +65,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 25px;
-    transition: ease 2s;
+    transition: background-color ease 2s, color ease 2s, border ease 2s;
     &:hover {
       background-color: $light-background;
       color: $dark-background;
