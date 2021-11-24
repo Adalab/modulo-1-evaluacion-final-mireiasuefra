@@ -1,6 +1,6 @@
 .footer {
   background-color: $dark-background;
-  color: white;
+  color: $base-color;
   font-family: $principal-font;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   align-items: center;
 
   & a {
-    color: white;
+    color: $base-color;
     text-transform: uppercase;
   }
 
@@ -25,7 +25,6 @@
       flex-direction: row;
       align-items: flex-start;
       text-align: start;
-
     }
   }
 
@@ -78,7 +77,7 @@
 }
 
 .icon-scroll {
-  background-color: white;
+  background-color: $base-color;
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -86,6 +85,27 @@
   justify-content: center;
   align-items: center;
   transform: translateY(-17px);
+  animation-name: scroll;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  @keyframes scroll {
+    0% {
+      background-color: $base-color;
+    }
+    25% {
+      background-color: $light-background;
+    }
+    50% {
+      background-color: $dark-background;
+    }
+    75% {
+      background-color: $light-background;
+    }
+    100% {
+      background-color: $base-color;
+    }
+  }
 }
 
 .heart {
