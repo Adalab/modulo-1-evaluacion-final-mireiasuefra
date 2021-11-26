@@ -1,6 +1,6 @@
 .footer {
-  background-color: $dark-background;
-  color: $base-color;
+  background-color: #0271bc;
+  color: black;
   font-family: $principal-font;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
   align-items: center;
 
   & a {
-    color: $base-color;
+    color: black;
     text-transform: uppercase;
   }
 
@@ -31,47 +31,49 @@
   &-links__nav {
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
+    padding: 45px;
+    order: 1;
 
     @media (min-width: $breakpoint-tablet) {
-      order: 2;
       margin-top: 20px;
       margin-bottom: 30px;
       margin-left: 40px;
       margin-right: 40px;
+      padding: none;
     }
   }
 
   &-links__social {
     font-size: 16px;
     line-height: 1.5;
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 45px;
+    order: 2;
 
     @media (min-width: $breakpoint-tablet) {
-      order: 3;
       margin-top: 20px;
       margin-left: 40px;
       margin-right: 40px;
+      padding-bottom: 45px;
     }
   }
 
   &-links__span {
     font-size: 14px;
     line-height: 1.5;
-    margin-top: 30px;
-    margin-bottom: 75px;
     display: flex;
     flex-direction: column;
+    padding-bottom: 45px;
+    order: 3;
 
     @media (min-width: $breakpoint-tablet) {
-      order: 1;
       margin-top: 20px;
       margin-left: 40px;
       margin-right: 40px;
+      padding-botton: none;
     }
   }
 }
@@ -110,4 +112,17 @@
 
 .heart {
   color: $highlighted-color;
+}
+
+.comp {
+
+  color: $base-color;
+
+  @media (min-width: $breakpoint-tablet)  {
+    color: $highlighted-color;
+  }
+
+  @media (min-width: $breakpoint-desktop)  {
+    color: $base-color;
+  }
 }
